@@ -12,9 +12,10 @@
 <body>
     <!-- Title div -->
     <div class="container" id="title">
-        <h1 class="text-center">Dylan's Music Quiz!</h1>
+        <h1 class="text-center">Dylan's Super Niche Quiz!</h1>
 
-        <h4 class="text-center">See if you can answer these tricky timed questions about music!</h4>
+        <h4 class="text-center">See if you can answer these pretty unfair, timed questions!</h4>
+        <h4 class="text-center"><em>(Hey, you may get a couple at least...)</em></h4>
     </div>
 
     <!-- Questions & Answers -->
@@ -27,20 +28,58 @@
                 <!-- Question div -->
                 <div class="col-md-8" id="question1question">
                     <h3>Question 1!</h3>
-                    <h5>\</h5>
-                    <p class="option option1">-</p>
-                    <p class="option option2">-</p>
-                    <p class="option option3">-</p>
-                    <p class="option option4">-</p>
-                    
+                    <h5>Which two members of <em>KISS</em> does Rivers Cuomo sing about in <em>Weezer's</em> 1994 song <em>'In The Garage'</em>?</h5>
+                    <p class="option option1">- Gene Simmons & Paul Stanley -</p>
+                    <p class="option option2">- Paul Stanley & Ace Frehley -</p>
+                    <p class="option option3">- Ace Frehley & Peter Criss -</p>
+                    <p class="option option4">- Peter Criss & Gene Simmons -</p>
                 </div>
 
                 <div class="col-md-2"></div>
             </div>
         </div>
 
-        <div class="container" id="question1result">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
 
+                <!-- Result div -->
+                <div class="col-md-8" id="question1result">
+                    <h3>Result!</h3>
+                    
+                    <h5><span id="result-title"></span></h5>
+
+                    <p><span id="result-text"></span></p>
+
+                    <img id="gif">
+
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+
+                <!-- Final result div-->
+                <div class="col-md-8" id="final">
+                    <h3>Let's see how you did...</h3>
+
+                    <h2><span id="final-score"></span></h2>
+
+                    <img id="gif-final">
+                    
+                    <h5><span id="final-title"></span></h5>
+
+                    <p><span id="final-text"></span></p>
+
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
         </div>
 
     </div>
