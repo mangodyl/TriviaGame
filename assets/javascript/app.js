@@ -78,43 +78,45 @@ $(function() {
 
             correctAnswers++;
 
-            questioncounter++;
-
-            stop();
-
-
-            if (questioncounter === 1) {
-                setInterval(q2func, 5000);
-            }
-            else if (questioncounter === 2) {
-                setInterval(q3func, 5000);
-            }
-            else if (questioncounter === 4) {
-                setInterval(resultFunc, 5000);
-            };
-
         }
         else {
 
             $("#answer-title").text("Wrong!");
 
-            $("#gif").attr("src", 'assets/images/snl-wrong.gif')
+            if (questioncounter === 0) {
 
+            $("#gif").attr("src", 'assets/images/snl-wrong.gif')
             $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
 
-            questioncounter++;
-
-            stop();
+            };
 
             if (questioncounter === 1) {
-                setInterval(q2func, 5000);
-            }
-            else if (questioncounter === 2) {
-                setInterval(q3func, 5000);
-            }
-            else if (questioncounter === 4) {
-                setInterval(resultFunc, 5000);
+
+                $("#gif").attr("src", 'assets/images/crikey-wrong.gif')
+                $("#answer-text").text("Wow, no. Maybe if you spent more time learning useless information this whole quiz would've been a cakewalk.");
+
             };
+
+            if (questioncounter === 2) {
+
+                $("#gif").attr("src", 'assets/images/prince-wrong.gif')
+                $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
+
+            };
+        };
+
+        questioncounter++;
+
+        stop();
+
+        if (questioncounter === 1) {
+            setInterval(q2func, 5000);
+        }
+        else if (questioncounter === 2) {
+            setInterval(q3func, 5000);
+        }
+        else if (questioncounter === 4) {
+            setInterval(resultFunc, 5000);
         };
 
         $("#question1").addClass("hidden");
@@ -127,6 +129,7 @@ $(function() {
 function q2func() {
 
     $("#answer-div").addClass("hidden");
+    $()
 
     $("#question2").removeClass("hidden");
 
