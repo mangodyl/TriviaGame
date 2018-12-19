@@ -12,12 +12,24 @@ $(function() {
     function run() {
         clearInterval(intervalId);
         intervalId = setInterval(timer, 1000);
-      }
+    };
+
+    function stop() {
+        clearInterval(intervalId);
+        $("#timer-div").html(" ");
+
+    };
 
     function timer() {
         number--;
 
-        $("#timer-div").html("<h2>" + number + "</h2");
+        $("#timer-div").html("<h2 class='time-h2'>" + number + "</h2");
+
+        if (number === 0) {
+            stop();
+            timeOut();
+            number = 21;
+        }
 
     };
 
@@ -36,7 +48,9 @@ $(function() {
 
     // --- Question 1
 
-    $(".option").on("click", function timeOut() {
+    $(".option").on("click", timeOut);
+    
+    function timeOut() {
 
         if ($(this).hasClass("correct")) {
 
@@ -47,6 +61,10 @@ $(function() {
             $("#answer-text").text("Oh man, well played! Even if it was a complete guess, here you are with a right answer so good job. Starting off strong.");
 
             correctAnswers++;
+
+            stop();
+
+
         }
         else {
 
@@ -56,12 +74,13 @@ $(function() {
 
             $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
 
+            stop();
         };
 
         $("#question1").addClass("hidden");
 
         $("#answer-div").removeClass("hidden");
 
-    });
+    };
 
 });
