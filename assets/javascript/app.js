@@ -108,16 +108,16 @@ $(function() {
             $("#gif").attr("src", 'assets/images/snl-wrong.gif')
             $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
 
-            };
+            }
 
-            if (questioncounter === 2) {
+            else if (questioncounter === 2) {
 
                 $("#gif").attr("src", 'assets/images/crikey-wrong.gif')
                 $("#answer-text").text("Wow, no. Maybe if you spent more time learning useless information this whole quiz would've been a cakewalk.");
 
-            };
+            }
 
-            if (questioncounter === 3) {
+            else if (questioncounter === 3) {
 
                 $("#gif").attr("src", 'assets/images/prince-wrong.gif')
                 $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
@@ -129,20 +129,22 @@ $(function() {
 
         if (questioncounter === 1) {
             $("#question1").addClass("hidden");
-            setInterval(q2func, 5000);
+            setTimeout(q2func, 6000);
         }
         else if (questioncounter === 2) {
             $("#question2").addClass("hidden");
-            setInterval(q3func, 5000);
+            setTimeout(q3func, 6000);
         }
         else if (questioncounter === 3) {
             $("#question3").addClass("hidden");
-            setInterval(resultFunc, 5000);
+            setTimeout(resultFunc, 6000);
         };
 
         $("#answer-div").removeClass("hidden");
 
     };
+
+
 
     // };
 
@@ -209,8 +211,7 @@ function resultFunc() {
 
     $("#results-div").removeClass("hidden");
 
-}
-
+    };
 
 
 });

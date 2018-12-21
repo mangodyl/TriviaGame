@@ -63,8 +63,26 @@ h5 {
     font-size: 200%
 }
 
-.option {
+/** Form **/
+
+label {
+    font-size: 150%;
+}
+
+.form-control {
+    background-color: #FC4A1A;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+option {
     cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    background-color: #FC4A1A;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 120%;
 }
 
 img {
