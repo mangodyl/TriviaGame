@@ -11,7 +11,7 @@ $(function() {
         if (form.val() === null) {
             isValid = false;
         }
-        timeOut();
+        choiceFunction();
 
         console.log(isValid);
     };
@@ -59,10 +59,10 @@ $(function() {
 
     // Question 1
 
-    $("option").on("click", timeOut);
+    $("option").on("click", choiceFunction);
 
     
-    function timeOut() {
+    function choiceFunction() {
 
 
     // if (validateInput() === false) {
