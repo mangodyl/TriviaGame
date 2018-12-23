@@ -82,29 +82,29 @@ $(function() {
             // Q4 correct
             else if (questioncounter === 4) {
 
-                $("#gif").attr("src", 'assets/images/goldblum-right.gif');
-                $("#answer-text").text("You're either lucky or cheating to get this one. I'm not looking for a confession, I just want you to know that I know.");
+                $("#gif").attr("src", 'assets/images/futurama-right.gif');
+                $("#answer-text").text("Ray proved to them that the action on the keys were still great, and almost as great as your answer. Well done!");
 
             }
             // Q5 correct
             else if (questioncounter === 5) {
 
-                $("#gif").attr("src", 'assets/images/goldblum-right.gif');
-                $("#answer-text").text("You're either lucky or cheating to get this one. I'm not looking for a confession, I just want you to know that I know.");
+                $("#gif").attr("src", 'assets/images/offerman-right.gif');
+                $("#answer-text").text("Either you've read the book or you just figured the anwwer was the one I had to explain. Anyway, a win's a win. Nice job.");
 
             }
             // Q6 correct
             else if (questioncounter === 6) {
 
-                $("#gif").attr("src", 'assets/images/goldblum-right.gif');
-                $("#answer-text").text("You're either lucky or cheating to get this one. I'm not looking for a confession, I just want you to know that I know.");
+                $("#gif").attr("src", 'assets/images/sunny-right.gif');
+                $("#answer-text").text("I like this question, I like your answer, I like Danny DeVito. We're all winners here.");
 
             }
             // Q7 correct
             else if (questioncounter === 7) {
 
-                $("#gif").attr("src", 'assets/images/goldblum-right.gif');
-                $("#answer-text").text("You're either lucky or cheating to get this one. I'm not looking for a confession, I just want you to know that I know.");
+                $("#gif").attr("src", 'assets/images/vegeta-right.gif');
+                $("#answer-text").text("Like any self-respecting Pokémon Trainer would willingly catch a Zubat, when there so many other cool Pokémon in their world. Solid answer.");
 
             };
 
