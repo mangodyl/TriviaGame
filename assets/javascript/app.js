@@ -90,7 +90,7 @@ $(function() {
             else if (questioncounter === 5) {
 
                 $("#gif").attr("src", 'assets/images/offerman-right.gif');
-                $("#answer-text").text("Either you've read the book or you just figured the anwwer was the one I had to explain. Anyway, a win's a win. Nice job.");
+                $("#answer-text").text("Either you've read the book or you just figured the answer was the one I had to explain. Anyway, a win's a win. Nice job.");
 
             }
             // Q6 correct
@@ -132,31 +132,31 @@ $(function() {
             else if (questioncounter === 3) {
 
                 $("#gif").attr("src", 'assets/images/prince-wrong.gif')
-                $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
+                $("#answer-text").text("I forgive you for not knowing it, but it's 27. Remember that from now on.");
             }
             // Q4 Incorrect
             else if (questioncounter === 4) {
 
                 $("#gif").attr("src", 'assets/images/shtshow-wrong.gif')
-                $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
+                $("#answer-text").text("Whether you've never watched The Blues Brothers or just couldn't remember the answer, this is a good indicator that you should rewatch this gem.");
             }
             // Q5 Incorrect
             else if (questioncounter === 5) {
 
                 $("#gif").attr("src", 'assets/images/trump-wrong.gif')
-                $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
+                $("#answer-text").text("Shame Kubrick left this out when he made the film. Getting chased by hedge animals that may/may not exist was a creepy part of the book.");
             }
             // Q6 Incorrect
             else if (questioncounter === 6) {
 
                 $("#gif").attr("src", 'assets/images/wrong-carrey.gif')
-                $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
+                $("#answer-text").text("You should know this. Very important info.");
             }
             // Q7 Incorrect
             else if (questioncounter === 7) {
 
                 $("#gif").attr("src", 'assets/images/ramsey-wrong.gif')
-                $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
+                $("#answer-text").text("It's a niche quiz, but you should have guessed no Pokémon Trainer would use a Zubat.");
             };
         };
 
