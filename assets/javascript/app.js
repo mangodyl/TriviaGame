@@ -137,25 +137,25 @@ $(function() {
             // Q4 Incorrect
             else if (questioncounter === 4) {
 
-                $("#gif").attr("src", 'assets/images/prince-wrong.gif')
+                $("#gif").attr("src", 'assets/images/shtshow-wrong.gif')
                 $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
             }
             // Q5 Incorrect
             else if (questioncounter === 5) {
 
-                $("#gif").attr("src", 'assets/images/prince-wrong.gif')
+                $("#gif").attr("src", 'assets/images/trump-wrong.gif')
                 $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
             }
             // Q6 Incorrect
             else if (questioncounter === 6) {
 
-                $("#gif").attr("src", 'assets/images/prince-wrong.gif')
+                $("#gif").attr("src", 'assets/images/wrong-carrey.gif')
                 $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
             }
             // Q7 Incorrect
             else if (questioncounter === 7) {
 
-                $("#gif").attr("src", 'assets/images/prince-wrong.gif')
+                $("#gif").attr("src", 'assets/images/ramsey-wrong.gif')
                 $("#answer-text").text("Hah, just as I predicted. I did mention that this was gonna be pretty unfair...");
             };
         };
@@ -250,15 +250,23 @@ function resultFunc() {
     if (correctAnswers === 7) {
         $("#final-title").text("Too Well");
         $("#gif-final").attr("src", 'assets/images/rogen-win.gif');
-        $("#final-text").text("This is either your 4th time doing this quiz, or you're cheating. Big time. You shouln't be here. Go back and do it again with what you would have ACTUALLY chosen. This screen is for me only.");
+        $("#final-text").html("This is either your 4th time doing this quiz, or you're cheating. Big time. You shouln't be here. Go back and do it again with what you would have ACTUALLY chosen. <br> This screen is for me only.");
 
     }
     // Most correct
-    else if (correctAnswers === 2 || correctAnswers === 1) {
+    else if (correctAnswers === 4 || correctAnswers === 5 || correctAnswers === 6) {
+
+        $("#final-title").text("Pretty Good!");
+        $("#gif-final").attr("src", 'assets/images/not-bad.gif');
+        $("#final-text").html("It was Pat Benatar that once said 'Hit me with your best shot', and it looks like you did just that. <br> Your 'best' in ths instance was by no means perfect, but it sure did surprise me. Congrats.");
+
+    }
+    // Most wrong
+    else if (correctAnswers === 1 || correctAnswers === 2 || correctAnswers === 3) {
 
         $("#final-title").text("Meh");
-        $("#gif-final").attr("src", 'assets/images/not-bad.gif');
-        $("#final-text").text("It was Pat Benatar that once said 'Hit me with your best shot', and it looks like you did just that. Your 'best' in ths instance was by no means perfect, but it sure did surprise me. Congrats.");
+        $("#gif-final").attr("src", 'assets/images/super-meh.gif');
+        $("#final-text").html("You tried my quiz, and made it through to the end. Some people call that the real victory. <br> I don't. You got like 2 or something right. Stop kidding yourself.");
 
     }
     // None correct
