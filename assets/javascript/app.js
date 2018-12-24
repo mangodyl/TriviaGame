@@ -119,16 +119,6 @@ $(function() {
             correctAnswers++;
 
         }
-
-        // --- On question timeout
-        else if (number === 0){
-
-            $("#answer-title").text("Too Slow!");
-
-            $("#gif").attr("src", 'assets/images/simpsons-timeout.gif')
-            $("#answer-text").text("Uh oh, looks like you have some time management issues. I get that my quiz is hard, but you should work on that.");
-
-        }
         else {
 
             $("#answer-title").text("Wrong!");
